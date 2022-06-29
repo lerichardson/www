@@ -1,5 +1,6 @@
 import * as React from "react";
 import { css } from "@emotion/react";
+import { Button } from "../components/Button";
 
 const IndexPage = () => {
   return (
@@ -78,191 +79,24 @@ const IndexPage = () => {
             justify-content: space-evenly;
             align-items: center;
             margin-top: 1em;
+
+            @media (max-width: 600px) {
+              flex-direction: column;
+            }
           `}
         >
-          <a
-            href="https://poly.work/litbelb"
-            css={css`
-              text-decoration: none;
-              color: inherit;
-            `}
-          >
-            <div
-              css={css`
-                backdrop-filter: blur(12px) saturate(100%);
-                -webkit-backdrop-filter: blur(12px) saturate(100%);
-                background-color: rgba(17, 25, 40, 0.69);
-                border-radius: 12px;
-                border: 1px solid rgba(255, 255, 255, 0.125);
-                transition: all 0.2s ease-in-out;
-                padding: 1em;
-                color: white;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-
-                &:hover {
-                  backdrop-filter: blur(25px) saturate(100%);
-                  -webkit-backdrop-filter: blur(25px) saturate(100%);
-                  background-color: rgba(17, 25, 40, 0.25);
-                }
-              `}
-            >
-              Polywork
-            </div>
-          </a>
-          <a
-            href="https://github.com/lerichardson"
-            css={css`
-              text-decoration: none;
-              color: inherit;
-            `}
-          >
-            <div
-              css={css`
-                backdrop-filter: blur(12px) saturate(100%);
-                -webkit-backdrop-filter: blur(12px) saturate(100%);
-                background-color: rgba(17, 25, 40, 0.69);
-                border-radius: 12px;
-                border: 1px solid rgba(255, 255, 255, 0.125);
-                transition: all 0.2s ease-in-out;
-                padding: 1em;
-                color: white;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-
-                &:hover {
-                  backdrop-filter: blur(25px) saturate(100%);
-                  -webkit-backdrop-filter: blur(25px) saturate(100%);
-                  background-color: rgba(17, 25, 40, 0.25);
-                }
-              `}
-            >
-              GitHub
-            </div>
-          </a>
-          <a
-            href="https://twitter.com/onlyRealLevir"
-            css={css`
-              text-decoration: none;
-              color: inherit;
-            `}
-          >
-            <div
-              css={css`
-                backdrop-filter: blur(12px) saturate(100%);
-                -webkit-backdrop-filter: blur(12px) saturate(100%);
-                background-color: rgba(17, 25, 40, 0.69);
-                border-radius: 12px;
-                border: 1px solid rgba(255, 255, 255, 0.125);
-                transition: all 0.2s ease-in-out;
-                padding: 1em;
-                color: white;
-
-                &:hover {
-                  backdrop-filter: blur(25px) saturate(100%);
-                  -webkit-backdrop-filter: blur(25px) saturate(100%);
-                  background-color: rgba(17, 25, 40, 0.25);
-                }
-              `}
-            >
-              Twitter
-            </div>
-          </a>
-
-          <a
-            href="mailto:levir620@skiff.com"
-            css={css`
-              text-decoration: none;
-              color: inherit;
-            `}
-          >
-            <div
-              css={css`
-                backdrop-filter: blur(12px) saturate(100%);
-                -webkit-backdrop-filter: blur(12px) saturate(100%);
-                background-color: rgba(17, 25, 40, 0.69);
-                border-radius: 12px;
-                border: 1px solid rgba(255, 255, 255, 0.125);
-                transition: all 0.2s ease-in-out;
-                padding: 1em;
-                color: white;
-
-                &:hover {
-                  backdrop-filter: blur(25px) saturate(100%);
-                  -webkit-backdrop-filter: blur(25px) saturate(100%);
-                  background-color: rgba(17, 25, 40, 0.25);
-                }
-              `}
-            >
-              Email me!
-            </div>
-          </a>
-
-          <a
-            href="https://open.spotify.com/user/hb76ow6b0e1vcmn22n4ogot37?si=4e1402d7078d4a17"
-            css={css`
-              text-decoration: none;
-              color: inherit;
-            `}
-          >
-            <div
-              css={css`
-                backdrop-filter: blur(12px) saturate(100%);
-                -webkit-backdrop-filter: blur(12px) saturate(100%);
-                background-color: rgba(17, 25, 40, 0.69);
-                border-radius: 12px;
-                border: 1px solid rgba(255, 255, 255, 0.125);
-                transition: all 0.2s ease-in-out;
-                padding: 1em;
-                color: white;
-
-                &:hover {
-                  backdrop-filter: blur(25px) saturate(100%);
-                  -webkit-backdrop-filter: blur(25px) saturate(100%);
-                  background-color: rgba(17, 25, 40, 0.25);
-                }
-              `}
-            >
-              Spotify
-            </div>
-          </a>
-          <a
-            href="https://twitch.tv/litbelb_"
-            css={css`
-              text-decoration: none;
-              color: inherit;
-            `}
-          >
-            <div
-              css={css`
-                backdrop-filter: blur(12px) saturate(100%);
-                -webkit-backdrop-filter: blur(12px) saturate(100%);
-                background-color: rgba(17, 25, 40, 0.69);
-                border-radius: 12px;
-                border: 1px solid rgba(255, 255, 255, 0.125);
-                transition: all 0.2s ease-in-out;
-                padding: 1em;
-                color: white;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-
-                &:hover {
-                  backdrop-filter: blur(25px) saturate(100%);
-                  -webkit-backdrop-filter: blur(25px) saturate(100%);
-                  background-color: rgba(17, 25, 40, 0.25);
-                }
-              `}
-            >
-              Twitch
-              <small>I stream code here sometimes</small>
-            </div>
-          </a>
+          <Button link="https://poly.work/litbelb" text="Polywork" />
+          <Button link="https://github.com/lerichardson" text="GitHub" />
+          <Button link="https://twitter.com/onlyRealLevir" text="Twitter" />
+          <Button link="mailto:levir620@skiff.com" text="Email me" />
+          <Button
+            link="https://open.spotify.com/user/hb76ow6b0e1vcmn22n4ogot37?si=4e1402d7078d4a17"
+            text="Spotify"
+          />
+          <Button link="https://twitch.tv/litbelb_">
+            Twitch
+            <small>I stream code here sometimes</small>
+          </Button>
         </div>
       </div>
     </main>
